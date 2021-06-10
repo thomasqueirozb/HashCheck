@@ -1,0 +1,11 @@
+[search]
+include = ['/var/www']
+exclude = ['/var/www/html/exclude']
+
+[email]
+sender = 'sender@example.com'
+sender_name = 'Sender Senderson'
+recipient = 'recipient@example.com'
+
+[sparkpost]
+key = 'XXXXXXXXXXXXXXXXX'

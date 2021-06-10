@@ -1,0 +1,13 @@
+[Unit]
+Description = Hash Check
+After = network.target
+
+[Service]
+ExecStart = /usr/bin/hash_check
+
+[Install]
+WantedBy = multi-user.target
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1h
