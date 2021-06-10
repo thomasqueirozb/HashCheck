@@ -10,3 +10,12 @@ install:
 	cp hash_check.timer /lib/systemd/system/
 	cp hash_check.service /lib/systemd/system/
 	systemctl enable --now hash_check.timer
+
+uninstall:
+	rm /etc/hash_check.toml
+	rm /usr/bin/hash_check
+	
+	systemctl disable hash_check.timer
+	rm /lib/systemd/system/hash_check.timer
+	rm /lib/systemd/system/hash_check.service
+
