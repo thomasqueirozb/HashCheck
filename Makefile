@@ -1,6 +1,9 @@
 compile:
 	cargo build --release
 
+sparkpost:
+	cargo build --release --no-default-features --features email_sparkpost
+
 install:
 	cp hash_check.toml /etc/
 	chmod 600 /etc/hash_check.toml
