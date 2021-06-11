@@ -1,0 +1,14 @@
+Configuration file: hash_check.toml
+    [search]
+      include are the files/folder to be checked 
+      exclude are the files/folders to ignore
+    [email]
+      configure sender and recipient
+    [sparkpost]
+      key if you want to use sparkpost
+    
+build:
+    Default: sendmail
+        make && sudo make install
+    Sparkpost:
+        make sparkpost && sudo make install
